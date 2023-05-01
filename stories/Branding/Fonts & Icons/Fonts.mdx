@@ -1,0 +1,124 @@
+import { Meta, Typeset} from '@storybook/addon-docs';
+
+<Meta title="Branding/Fonts & Icons/Fonts" />
+
+<style>
+{`
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+`}
+</style>
+
+
+export const typography = {
+  type: {
+    openSans: '"Open Sans", sans-serif',
+    oswald: '"Oswald", sans-serif',
+    crimson: '"Crimson Pro", serif',
+  },
+  weight: {
+    two: '200',
+    three: '300',
+    four: '400',
+    five: '500',
+    six: '600',
+    seven: '700',
+    eight: '800',
+  },
+  size: {
+    h6: 11,
+    h5: 13,
+    h4: 16,
+    h3: 21,
+    h2: 24,
+    h1: 32,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+
+
+# Typography
+
+**Font:** Open Sans
+
+**Weights:** 300, 400, 600, 700, 800
+
+**URL:** <a href="https://fonts.google.com/specimen/Open+Sans">See Open Sans on Google Fonts</a>
+
+Open Sans is a widely-compatible web font that is ideal for body copy and low-level headings.
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h6),
+    Number(typography.size.h5),
+    Number(typography.size.h4),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1)
+  ]}
+  fontWeight={typography.weight.four}
+  sampleText={SampleText}
+  fontFamily={typography.type.openSans}
+/>
+
+---
+
+**Font:** Oswald
+
+**Weights:** 200, 300, 400, 500, 600, 700
+
+**URL:** <a href="https://fonts.google.com/specimen/Oswald">See Oswald on Google Fonts</a>
+
+Oswald is optimized for web and replaces Tungsten in a digital environment.
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h6),
+    Number(typography.size.h5),
+    Number(typography.size.h4),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1)
+  ]}
+  fontWeight={typography.weight.four}
+  sampleText={SampleText}
+  fontFamily={typography.type.oswald}
+/>
+
+---
+
+**Font:** Crimson Pro
+
+**Weights:** 300
+
+**Styles:** Italic, Semibold, Semibold Italic, Bold, Bold Italic
+
+**URL:** <a href="https://fonts.google.com/specimen/Crimson+Pro">See Crimson Pro on Google Fonts</a>
+
+Substitute for Minion Pro (web use only).
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h6),
+    Number(typography.size.h5),
+    Number(typography.size.h4),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1)
+  ]}
+  fontWeight={typography.weight.three}
+  sampleText={SampleText}
+  fontFamily={typography.type.crimson}
+/>
+
+---
+
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;1,300&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Crimson Pro', serif;
+```
