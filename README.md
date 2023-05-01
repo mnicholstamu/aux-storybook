@@ -7,5 +7,5 @@ For more information, please check the [Storybook documentation for Web Componen
 
 ## Getting Started
 1. Clone this repo
-2. Run `npm install`
-3. Run  `npm run storybook` 
+2. `npm install`
+3. `npm run storybook` 
