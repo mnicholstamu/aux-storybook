@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+
+$primary-brand: #4f001a;
+$primary-brand-dark: #3c001c;
+$primary-brand-light: #732f2f;
+$cream: #e9e4dc;
+$cobalt: #48597e;
+$gold: #af8846;
+$gray-100: #f6f6f6;
+$gray-200: #eaeaea;
+$gray-400: #a7a7a7;
+
+.btn {
+  font-family: 'Work Sans', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 1em;
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  
+  &:focus {
+    outline: 1px dashed $cobalt;
+    outline-offset: 0.25rem;
+  }
+  
+  &[class*="inactive"], :disabled {
+    background-color: $gray-100;
+    border: 2px solid $gray-200;
+    color: $gray-400;
+    cursor: not-allowed;
+  }
+}
+
+
+.btn--primary {
+  background: $primary-brand;
+  color: #fff; 
+  border: 2px solid $primary-brand-dark;
+  position: relative;
+  transition: 0.3s ease;  
+  
+  &:after {
+    display: block;
+    content: '';
+    box-shadow: 0px 3px 0px 2px $primary-brand-dark;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  &:hover {
+    background-color: $primary-brand-light;
+    &:after { 
+      transform: scaleY(1);
+    }
+  }
+}
+
+
+
+.btn--primary__dark {
+  @extend .btn--primary;
+  background: #fff;
+  color: $primary-brand;
+  border: 2px solid $gold;
+  
+  &:after {
+    content: '';
+    box-shadow: 0px 3px 0px 2px $gold;
+  }
+  
+  &:hover{
+    background-color:$cream;
+    color: $primary-brand;
+  }
+}
+  
+  
+.btn--primary-alt {
+  @extend .btn--primary;
+  background-color: transparent;
+  color: $primary-brand;
+
+  &:after {
+    content: '';
+    @-moz-document url-prefix(){
+     width: 100%;
+    };
+  }
+  
+  &:hover{
+    color: #fff;
+  }
+}
+
+.btn--primary-alt__dark {
+  @extend .btn--primary__dark;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid $gold;
+
+  &:after {
+    content: '';
+    @-moz-document url-prefix(){
+     width: 100%;
+    };
+  }
+  
+  &:hover{
+    color: $primary-brand;
+    background-color: #fff;
+  }
+}

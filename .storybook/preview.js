@@ -19,6 +19,10 @@ const preview = {
               'Fonts & Icons',
               ['*']
           ],
+          'Atoms',
+          [
+            'Button', 'Divider'
+          ]
         ]
       },
     },
@@ -46,8 +50,22 @@ const preview = {
         title: 'Deprecated',
       },
     },
+    backgrounds: {
+      default: 'white',
+      values: [
+        {
+          name: 'white',
+          value: '#ffffff',
+        },
+        {
+          name: 'dark',
+          value: '#3c001c',
+        },
+      ],
+    },
   },
 };
 import '../static/css/aux-grid.css';
+import '../static/css/fonts.css';
 
 export default preview;

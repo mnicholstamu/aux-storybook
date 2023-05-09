@@ -4,16 +4,19 @@ import { Meta, Typeset} from '@storybook/addon-docs';
 
 <style>
 {`
-    @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 `}
 </style>
 
 
 export const typography = {
   type: {
-    openSans: '"Open Sans", sans-serif',
+    openSans: '"Open Sans", Arial, sans-serif',
+    workSans: '"Work Sans", Arial, sans-serif',
     oswald: '"Oswald", sans-serif',
-    crimson: '"Crimson Pro", serif',
+    georgia: 'Georgia, Times New Roman, serif'
   },
   weight: {
     two: '200',
@@ -23,8 +26,10 @@ export const typography = {
     six: '600',
     seven: '700',
     eight: '800',
+    nine: '900',
   },
   size: {
+    p: 16,
     h6: 11,
     h5: 13,
     h4: 16,
@@ -40,16 +45,25 @@ export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing el
 
 # Typography
 
-**Font:** Open Sans
 
-**Weights:** 300, 400, 600, 700, 800
+The fonts used in AUX: Georgia, Oswald, Open Sans, Work Sans
 
-**URL:** <a href="https://fonts.google.com/specimen/Open+Sans">See Open Sans on Google Fonts</a>
+Headings should be use the following font weights:
+- `h1`: 900
+- `h2`: 900
+- `h3`: 500
+- `h4`: Normal
+- `h5`: Normal
+- `h6`: Normal
 
-Open Sans is a widely-compatible web font that is ideal for body copy and low-level headings.
+## Georgia
 
+**Font:** Georgia
+
+**Usage:** Recommended for headings h1-h3. Georgia should **NOT** to be used for body copy.
 <Typeset
   fontSizes={[
+    Number(typography.size.p),
     Number(typography.size.h6),
     Number(typography.size.h5),
     Number(typography.size.h4),
@@ -59,21 +73,22 @@ Open Sans is a widely-compatible web font that is ideal for body copy and low-le
   ]}
   fontWeight={typography.weight.four}
   sampleText={SampleText}
-  fontFamily={typography.type.openSans}
+  fontFamily={typography.type.georgia}
 />
 
----
+## Oswald
 
 **Font:** Oswald
 
 **Weights:** 200, 300, 400, 500, 600, 700
 
-**URL:** <a href="https://fonts.google.com/specimen/Oswald">See Oswald on Google Fonts</a>
+**Usage:** Recommended for headings h1 - h3. Oswald should **NEVER** be used for body copy, subheads, superheads, etc.
 
-Oswald is optimized for web and replaces Tungsten in a digital environment.
+**URL:** [https://fonts.google.com/specimen/Oswald](https://fonts.google.com/specimen/Oswald)
 
 <Typeset
   fontSizes={[
+    Number(typography.size.p),
     Number(typography.size.h6),
     Number(typography.size.h5),
     Number(typography.size.h4),
@@ -86,20 +101,19 @@ Oswald is optimized for web and replaces Tungsten in a digital environment.
   fontFamily={typography.type.oswald}
 />
 
----
+## Open Sans
 
-**Font:** Crimson Pro
+**Font:** Open Sans
 
-**Weights:** 300
+**Weights:** 300, 400, 600, 700, 800
 
-**Styles:** Italic, Semibold, Semibold Italic, Bold, Bold Italic
+**Usage:** Recommended for headings h4 - h6. Open Sans is recommended body copy.
 
-**URL:** <a href="https://fonts.google.com/specimen/Crimson+Pro">See Crimson Pro on Google Fonts</a>
-
-Substitute for Minion Pro (web use only).
+**URL:** [https://fonts.google.com/specimen/Open+Sans](https://fonts.google.com/specimen/Open+Sans)
 
 <Typeset
   fontSizes={[
+    Number(typography.size.p),
     Number(typography.size.h6),
     Number(typography.size.h5),
     Number(typography.size.h4),
@@ -107,18 +121,46 @@ Substitute for Minion Pro (web use only).
     Number(typography.size.h2),
     Number(typography.size.h1)
   ]}
-  fontWeight={typography.weight.three}
+  fontWeight={typography.weight.four}
   sampleText={SampleText}
-  fontFamily={typography.type.crimson}
+  fontFamily={typography.type.openSans}
+/>
+
+## Work Sans
+
+**Font:** Work Sans
+
+**Weights:** 100, 200, 300, 400, 500, 600, 700, 800, 900
+
+**Usage:** Recommended for headings h1-h3. Work Sans should **NOT** be use for large blocks of body copy. Work Sans is brought in more as a utility font on elements like forms and buttons.
+
+**URL:** [https://fonts.google.com/specimen/Work+Sans](https://fonts.google.com/specimen/Work+Sans)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.p),
+    Number(typography.size.h6),
+    Number(typography.size.h5),
+    Number(typography.size.h4),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1)
+  ]}
+  fontWeight={typography.weight.four}
+  sampleText={SampleText}
+  fontFamily={typography.type.workSans}
 />
 
 ---
 
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;1,300&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
 
-font-family: 'Open Sans', sans-serif;
+font-family: 'Georgia, Times New Roman, serif;
 font-family: 'Oswald', sans-serif;
-font-family: 'Crimson Pro', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', Arial, sans-serif;
 ```

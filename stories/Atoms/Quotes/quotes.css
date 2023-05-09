@@ -1,0 +1,195 @@
+/* REMOVE THIS CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET */
+
+
+
+.blockquote, .pullquote--has-cite, .pullquote--long, .pullquote, .blockquote--has-cite, .blockquote--long {
+    padding: 2rem;
+    line-height: 1.5;
+  }
+  .blockquote .blockquote__content, .pullquote--has-cite .blockquote__content, .pullquote--has-cite .pullquote__content, .pullquote--long .blockquote__content, .pullquote--long .pullquote__content, .pullquote .blockquote__content, .pullquote .pullquote__content, .blockquote--has-cite .blockquote__content, .blockquote--long .blockquote__content {
+    font-family: Georgia, serif;
+    font-size: 1.375rem;
+  }
+  .blockquote .blockquote__content::before, .pullquote--has-cite .blockquote__content::before, .pullquote--has-cite .pullquote__content::before, .pullquote--long .blockquote__content::before, .pullquote--long .pullquote__content::before, .pullquote .blockquote__content::before, .pullquote .pullquote__content::before, .blockquote--has-cite .blockquote__content::before, .blockquote--long .blockquote__content::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #732f2f;
+    position: absolute;
+  }
+  .blockquote .blockquote__content > *, .pullquote--has-cite .blockquote .pullquote__content > *, .pullquote--has-cite .blockquote__content > *, .pullquote--has-cite .pullquote__content > *, .pullquote--long .blockquote .pullquote__content > *, .pullquote--long .blockquote__content > *, .pullquote--long .pullquote__content > *, .pullquote .blockquote .pullquote__content > *, .pullquote .blockquote__content > *, .pullquote .pullquote__content > *, .blockquote--has-cite .blockquote__content > *, .pullquote--has-cite .blockquote--has-cite .pullquote__content > *, .pullquote--long .blockquote--has-cite .pullquote__content > *, .pullquote .blockquote--has-cite .pullquote__content > *, .blockquote--long .blockquote__content > *, .pullquote--has-cite .blockquote--long .pullquote__content > *, .pullquote--long .blockquote--long .pullquote__content > *, .pullquote .blockquote--long .pullquote__content > * {
+    padding-top: 1rem;
+  }
+  
+  .blockquote--long .blockquote__content, .blockquote--long .pullquote--has-cite .pullquote__content, .pullquote--has-cite .blockquote--long .pullquote__content, .pullquote--long .blockquote__content, .pullquote--long .pullquote__content, .blockquote--long .pullquote .pullquote__content, .pullquote .blockquote--long .pullquote__content {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #3e3e3e;
+  }
+  
+  .blockquote--has-cite, .pullquote--has-cite {
+    margin-left: 2.5rem;
+    padding: 2rem 2rem 2rem 0.5rem;
+  }
+  .blockquote--has-cite .blockquote__content > *, .pullquote--has-cite .blockquote--has-cite .pullquote__content > *, .pullquote--has-cite .blockquote__content > *, .pullquote--has-cite .pullquote__content > *, .blockquote--has-cite .pullquote--long .pullquote__content > *, .pullquote--has-cite .pullquote--long .pullquote__content > *, .pullquote--long .blockquote--has-cite .pullquote__content > *, .blockquote--has-cite .pullquote .pullquote__content > *, .pullquote--has-cite .pullquote .pullquote__content > *, .pullquote .blockquote--has-cite .pullquote__content > * {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .blockquote--has-cite .blockquote__content::before, .pullquote--has-cite .blockquote__content::before, .pullquote--has-cite .pullquote__content::before, .blockquote--has-cite .pullquote--long .pullquote__content::before, .pullquote--long .blockquote--has-cite .pullquote__content::before, .blockquote--has-cite .pullquote .pullquote__content::before, .pullquote .blockquote--has-cite .pullquote__content::before {
+    font-family: Georgia, Times New Roman, serif;
+    background: transparent;
+    content: "“";
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #732f2f;
+    margin-left: -2.5rem;
+    margin-top: -1.5rem;
+  }
+  
+  .blockquote__cite, .pullquote--has-cite .pullquote__cite {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    border-left: solid #732f2f 2px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .blockquote__cite .name, .pullquote--has-cite .pullquote__cite .name {
+    color: #4f001a;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .blockquote__cite .title, .pullquote--has-cite .pullquote__cite .title {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+  .blockquote__cite .org, .pullquote--has-cite .pullquote__cite .org {
+    font-size: 0.9rem;
+  }
+  
+  .pullquote {
+    max-width: 375px;
+    float: left;
+  }
+  .clear-float {
+    clear: left;
+  }
+  
+  /* COLOR THEMES */
+  .blockquote.rouge .blockquote__content::before, .rouge.blockquote--long .blockquote__content::before, .rouge.blockquote--has-cite .blockquote__content::before, .rouge.pullquote--long .blockquote__content::before, .rouge.pullquote--has-cite .blockquote__content::before, .rouge.pullquote--long .pullquote__content::before, .rouge.pullquote--has-cite .pullquote__content::before, .blockquote.rouge .pullquote__content::before, .rouge.blockquote--long .pullquote__content::before, .rouge.blockquote--has-cite .pullquote__content::before, .pullquote.rouge .blockquote__content::before, .pullquote.rouge .pullquote__content::before {
+    background: #95463b;
+  }
+  .blockquote.rouge .blockquote__cite, .rouge.blockquote--long .blockquote__cite, .rouge.blockquote--has-cite .blockquote__cite, .rouge.pullquote--long .blockquote__cite, .rouge.pullquote--has-cite .blockquote__cite, .rouge.pullquote--has-cite .pullquote__cite, .blockquote.rouge .pullquote__cite, .rouge.blockquote--long .pullquote__cite, .rouge.blockquote--has-cite .pullquote__cite, .rouge.pullquote--long .pullquote__cite, .pullquote.rouge .blockquote__cite, .pullquote.rouge .pullquote__cite {
+    border-left: solid #95463b 2px;
+  }
+  .blockquote.gold .blockquote__content::before, .gold.blockquote--long .blockquote__content::before, .gold.blockquote--has-cite .blockquote__content::before, .gold.pullquote--long .blockquote__content::before, .gold.pullquote--has-cite .blockquote__content::before, .gold.pullquote--long .pullquote__content::before, .gold.pullquote--has-cite .pullquote__content::before, .blockquote.gold .pullquote__content::before, .gold.blockquote--long .pullquote__content::before, .gold.blockquote--has-cite .pullquote__content::before, .pullquote.gold .blockquote__content::before, .pullquote.gold .pullquote__content::before {
+    background: #af8846;
+  }
+  .blockquote.gold .blockquote__cite, .gold.blockquote--long .blockquote__cite, .gold.blockquote--has-cite .blockquote__cite, .gold.pullquote--long .blockquote__cite, .gold.pullquote--has-cite .blockquote__cite, .gold.pullquote--has-cite .pullquote__cite, .blockquote.gold .pullquote__cite, .gold.blockquote--long .pullquote__cite, .gold.blockquote--has-cite .pullquote__cite, .gold.pullquote--long .pullquote__cite, .pullquote.gold .blockquote__cite, .pullquote.gold .pullquote__cite {
+    border-left: solid #af8846 2px;
+  }
+  .blockquote.olive .blockquote__content::before, .olive.blockquote--long .blockquote__content::before, .olive.blockquote--has-cite .blockquote__content::before, .olive.pullquote--long .blockquote__content::before, .olive.pullquote--has-cite .blockquote__content::before, .olive.pullquote--long .pullquote__content::before, .olive.pullquote--has-cite .pullquote__content::before, .blockquote.olive .pullquote__content::before, .olive.blockquote--long .pullquote__content::before, .olive.blockquote--has-cite .pullquote__content::before, .pullquote.olive .blockquote__content::before, .pullquote.olive .pullquote__content::before {
+    background: #5b6236;
+  }
+  .blockquote.olive .blockquote__cite, .olive.blockquote--long .blockquote__cite, .olive.blockquote--has-cite .blockquote__cite, .olive.pullquote--long .blockquote__cite, .olive.pullquote--has-cite .blockquote__cite, .olive.pullquote--has-cite .pullquote__cite, .blockquote.olive .pullquote__cite, .olive.blockquote--long .pullquote__cite, .olive.blockquote--has-cite .pullquote__cite, .olive.pullquote--long .pullquote__cite, .pullquote.olive .blockquote__cite, .pullquote.olive .pullquote__cite {
+    border-left: solid #5b6236 2px;
+  }
+  .blockquote.green .blockquote__content::before, .green.blockquote--long .blockquote__content::before, .green.blockquote--has-cite .blockquote__content::before, .green.pullquote--long .blockquote__content::before, .green.pullquote--has-cite .blockquote__content::before, .blockquote.green .pullquote .pullquote__content::before, .pullquote .blockquote.green .pullquote__content::before, .green.blockquote--long .pullquote .pullquote__content::before, .pullquote .green.blockquote--long .pullquote__content::before, .green.blockquote--has-cite .pullquote .pullquote__content::before, .pullquote .green.blockquote--has-cite .pullquote__content::before, .green.pullquote .pullquote__content::before, .blockquote.green .pullquote--long .pullquote__content::before, .pullquote--long .blockquote.green .pullquote__content::before, .green.blockquote--long .pullquote--long .pullquote__content::before, .pullquote--long .green.blockquote--long .pullquote__content::before, .green.blockquote--has-cite .pullquote--long .pullquote__content::before, .pullquote--long .green.blockquote--has-cite .pullquote__content::before, .green.pullquote--long .pullquote__content::before, .blockquote.green .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .blockquote.green .pullquote__content::before, .green.blockquote--long .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .green.blockquote--long .pullquote__content::before, .green.blockquote--has-cite .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .green.blockquote--has-cite .pullquote__content::before, .green.pullquote--has-cite .pullquote__content::before, .blockquote.green .pullquote__cite::before, .green.blockquote--long .pullquote__cite::before, .green.blockquote--has-cite .pullquote__cite::before, .green.pullquote--long .pullquote__cite::before, .green.pullquote--has-cite .pullquote__cite::before, .pullquote.green .blockquote__content::before, .pullquote.green .pullquote__cite::before {
+    background: #76987b;
+  }
+  .blockquote.green .blockquote__cite, .green.blockquote--long .blockquote__cite, .green.blockquote--has-cite .blockquote__cite, .green.pullquote--long .blockquote__cite, .green.pullquote--has-cite .blockquote__cite, .green.pullquote--has-cite .pullquote__cite, .blockquote.green .pullquote__cite, .green.blockquote--long .pullquote__cite, .green.blockquote--has-cite .pullquote__cite, .green.pullquote--long .pullquote__cite, .pullquote.green .blockquote__cite, .pullquote.green .pullquote__cite {
+    border-left: solid #76987b 2px;
+  }
+  .blockquote.teal .blockquote__content::before, .teal.blockquote--long .blockquote__content::before, .teal.blockquote--has-cite .blockquote__content::before, .teal.pullquote--long .blockquote__content::before, .teal.pullquote--has-cite .blockquote__content::before, .teal.pullquote--long .pullquote__content::before, .teal.pullquote--has-cite .pullquote__content::before, .blockquote.teal .pullquote__content::before, .teal.blockquote--long .pullquote__content::before, .teal.blockquote--has-cite .pullquote__content::before, .pullquote.teal .blockquote__content::before, .pullquote.teal .pullquote__content::before {
+    background: #1b9d92;
+  }
+  .blockquote.teal .blockquote__cite, .teal.blockquote--long .blockquote__cite, .teal.blockquote--has-cite .blockquote__cite, .teal.pullquote--long .blockquote__cite, .teal.pullquote--has-cite .blockquote__cite, .teal.pullquote--has-cite .pullquote__cite, .blockquote.teal .pullquote__cite, .teal.blockquote--long .pullquote__cite, .teal.blockquote--has-cite .pullquote__cite, .teal.pullquote--long .pullquote__cite, .pullquote.teal .blockquote__cite, .pullquote.teal .pullquote__cite {
+    border-left: solid #1b9d92 2px;
+  }
+  .blockquote.cobalt .blockquote__content::before, .cobalt.blockquote--long .blockquote__content::before, .cobalt.blockquote--has-cite .blockquote__content::before, .cobalt.pullquote--long .blockquote__content::before, .cobalt.pullquote--has-cite .blockquote__content::before, .blockquote.cobalt .pullquote .pullquote__content::before, .pullquote .blockquote.cobalt .pullquote__content::before, .cobalt.blockquote--long .pullquote .pullquote__content::before, .pullquote .cobalt.blockquote--long .pullquote__content::before, .cobalt.blockquote--has-cite .pullquote .pullquote__content::before, .pullquote .cobalt.blockquote--has-cite .pullquote__content::before, .cobalt.pullquote .pullquote__content::before, .blockquote.cobalt .pullquote--long .pullquote__content::before, .pullquote--long .blockquote.cobalt .pullquote__content::before, .cobalt.blockquote--long .pullquote--long .pullquote__content::before, .pullquote--long .cobalt.blockquote--long .pullquote__content::before, .cobalt.blockquote--has-cite .pullquote--long .pullquote__content::before, .pullquote--long .cobalt.blockquote--has-cite .pullquote__content::before, .cobalt.pullquote--long .pullquote__content::before, .blockquote.cobalt .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .blockquote.cobalt .pullquote__content::before, .cobalt.blockquote--long .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .cobalt.blockquote--long .pullquote__content::before, .cobalt.blockquote--has-cite .pullquote--has-cite .pullquote__content::before, .pullquote--has-cite .cobalt.blockquote--has-cite .pullquote__content::before, .cobalt.pullquote--has-cite .pullquote__content::before, .blockquote.cobalt .pullquote__cite::before, .cobalt.blockquote--long .pullquote__cite::before, .cobalt.blockquote--has-cite .pullquote__cite::before, .cobalt.pullquote--long .pullquote__cite::before, .cobalt.pullquote--has-cite .pullquote__cite::before, .pullquote.cobalt .blockquote__content::before, .pullquote.cobalt .pullquote__cite::before {
+    background: #48597e;
+  }
+  .blockquote.cobalt .blockquote__cite, .cobalt.blockquote--long .blockquote__cite, .cobalt.blockquote--has-cite .blockquote__cite, .cobalt.pullquote--long .blockquote__cite, .cobalt.pullquote--has-cite .blockquote__cite, .cobalt.pullquote--has-cite .pullquote__cite, .blockquote.cobalt .pullquote__cite, .cobalt.blockquote--long .pullquote__cite, .cobalt.blockquote--has-cite .pullquote__cite, .cobalt.pullquote--long .pullquote__cite, .pullquote.cobalt .blockquote__cite, .pullquote.cobalt .pullquote__cite {
+    border-left: solid #48597e 2px;
+  }
+  .blockquote.purple .blockquote__content::before, .purple.blockquote--long .blockquote__content::before, .purple.blockquote--has-cite .blockquote__content::before, .purple.pullquote--long .blockquote__content::before, .purple.pullquote--has-cite .blockquote__content::before, .purple.pullquote--long .pullquote__content::before, .purple.pullquote--has-cite .pullquote__content::before, .blockquote.purple .pullquote__content::before, .purple.blockquote--long .pullquote__content::before, .purple.blockquote--has-cite .pullquote__content::before, .pullquote.purple .blockquote__content::before, .pullquote.purple .pullquote__content::before {
+    background: #7f6078;
+  }
+  .blockquote.purple .blockquote__cite, .purple.blockquote--long .blockquote__cite, .purple.blockquote--has-cite .blockquote__cite, .purple.pullquote--long .blockquote__cite, .purple.pullquote--has-cite .blockquote__cite, .purple.pullquote--has-cite .pullquote__cite, .blockquote.purple .pullquote__cite, .purple.blockquote--long .pullquote__cite, .purple.blockquote--has-cite .pullquote__cite, .purple.pullquote--long .pullquote__cite, .pullquote.purple .blockquote__cite, .pullquote.purple .pullquote__cite {
+    border-left: solid #7f6078 2px;
+  }
+  
+  .blockquote--has-cite.rouge .blockquote__content::before, .blockquote--has-cite.rouge .pullquote__content::before, .pullquote--has-cite.rouge .blockquote__content::before, .pullquote--has-cite.rouge .pullquote__content::before {
+    background: none;
+    color: #95463b;
+  }
+  .blockquote--has-cite.gold .blockquote__content::before, .blockquote--has-cite.gold .pullquote__content::before, .pullquote--has-cite.gold .blockquote__content::before, .pullquote--has-cite.gold .pullquote__content::before {
+    background: none;
+    color: #af8846;
+  }
+  .blockquote--has-cite.olive .blockquote__content::before, .blockquote--has-cite.olive .pullquote__content::before, .pullquote--has-cite.olive .blockquote__content::before, .pullquote--has-cite.olive .pullquote__content::before {
+    background: none;
+    color: #5b6236;
+  }
+  .blockquote--has-cite.green .blockquote__content::before, .blockquote--has-cite.green .pullquote__content::before, .pullquote--has-cite.green .blockquote__content::before, .pullquote--has-cite.green .pullquote__content::before {
+    background: none;
+    color: #76987b;
+  }
+  .blockquote--has-cite.teal .blockquote__content::before, .blockquote--has-cite.teal .pullquote__content::before, .pullquote--has-cite.teal .blockquote__content::before, .pullquote--has-cite.teal .pullquote__content::before {
+    background: none;
+    color: #1b9d92;
+  }
+  .blockquote--has-cite.cobalt .blockquote__content::before, .blockquote--has-cite.cobalt .pullquote__content::before, .pullquote--has-cite.cobalt .blockquote__content::before, .pullquote--has-cite.cobalt .pullquote__content::before {
+    background: none;
+    color: #48597e;
+  }
+  .blockquote--has-cite.purple .blockquote__content::before, .blockquote--has-cite.purple .pullquote__content::before, .pullquote--has-cite.purple .blockquote__content::before, .pullquote--has-cite.purple .pullquote__content::before {
+    background: none;
+    color: #7f6078;
+  }

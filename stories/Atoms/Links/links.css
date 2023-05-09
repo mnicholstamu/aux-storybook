@@ -1,0 +1,46 @@
+a, .link--cta-leading, .link--cta, .link {
+    color: #006483;
+    transition: 0.2s ease;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: dotted #006483 1px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+  a h1, .link--cta-leading h1, .link--cta h1, .link h1, a h2, .link--cta-leading h2, .link--cta h2, .link h2, a h3, .link--cta-leading h3, .link--cta h3, .link h3, a h4, .link--cta-leading h4, .link--cta h4, .link h4, a h5, .link--cta-leading h5, .link--cta h5, .link h5, a h6, .link--cta-leading h6, .link--cta h6, .link h6 {
+    font-weight: bold;
+    color: inherit;
+  }
+  a:hover, .link--cta-leading:hover, .link--cta:hover, .link:hover {
+    color: #004362;
+    border-bottom: solid #004362 1px;
+  }
+  
+  .link--cta {
+    font-weight: 750;
+    font-size: 1.1rem;
+    border-bottom: solid transparent 1px;
+  }
+  .link--cta:hover {
+    border-bottom: solid #004362 1px;
+  }
+  .link--cta::after {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    padding-left: 0.3rem;
+  }
+  
+  .link--cta-leading {
+    font-weight: 750;
+    font-size: 1.1rem;
+    border-bottom: solid transparent 1px;
+  }
+  .link--cta-leading:hover {
+    border-bottom: solid #004362 1px;
+  }
+  .link--cta-leading::before {
+    content: "";
+    font-family: "Font Awesome 5 Pro";
+    padding-right: 0.3rem;
+  }
